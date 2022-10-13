@@ -6,6 +6,7 @@
 body {
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .boxCab {
@@ -38,10 +39,6 @@ body {
     width: 70%;
     height: 100%;
 
-    border: 1px solid;
-
-    
-
 }
 
 .barraAcoes ul {
@@ -57,6 +54,165 @@ body {
 
     margin-left: 75px;
     font-size: 2em;
+}
+
+.barraAcoes ul li span {
+    position: absolute;
+    top: 40px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    width: 10px;
+    height: 10px;
+    margin-left: 10px;
+    transform: rotate(-45deg);
+    transition: 0.3s;
+}
+
+.barraAcoes ul li:hover span{
+    transform: rotate(-225deg);
+}
+
+.barraAcoes ul li section {
+    position: absolute;
+    
+    border-radius: 5px;
+
+    overflow: hidden;
+    
+    margin-left: 30px;
+    margin-top: 5px;
+
+    width: 160px;
+    height: 0;
+    transition: 0.3s;
+}
+
+.barraAcoes ul li:hover section{
+    border: 1px solid;
+    height: auto;
+}
+
+.barraAcoes ul li section div {
+    position: relative;
+    width: 94%;
+    height: 24px;
+    text-decoration: none;
+    font-size: 0.7em;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 4px;
+    text-align: center;
+    transition: 0.2s;
+}   
+
+.barraAcoes ul li section div:hover {
+    width: 96%;
+    font-size: 0.75em;
+    margin: 2px;
+
+} 
+
+.cabPerfil {
+    display: flex;
+    flex-direction: row;
+    
+    width: 30%;
+    height: 100%;
+
+}
+.registraEntra{
+    border: 1px solid;
+    width: 30%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.registraEntra div{
+    position: relative;
+    margin-left: 15px;
+    margin-top: 35px;
+    font-size: 1.2em;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    width: 70%;
+    height: 100%;
+}
+
+.perfil .img{
+    border: 1px solid;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    margin: 3px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.perfil .img p{ 
+    margin-top: 40%;
+}
+
+.perfil .iconEngrenagem{
+    font-size: 3em;
+    margin-top: 15px;
+    margin-left: 220px;
+}
+
+.iconEngrenagem:hover .fa-gear{
+    animation: giragira 4s linear 0s infinite;
+}
+
+.iconEngrenagem section {
+    position: absolute;
+    overflow: hidden;
+    width: 160px;
+    margin-top: 5px;
+    margin-left: -100px;
+    height: 0;
+    transition: 0.3s;
+}
+
+.iconEngrenagem:hover section {
+    
+    border: 1px solid;
+    height: auto;
+}
+
+.iconEngrenagem section div {
+    position: relative;
+    width: 94%;
+    height: 24px;
+    text-decoration: none;
+    font-size: 0.7em;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 4px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+
+.iconEngrenagem:hover section div:hover {
+    width: 96%;
+    font-size: 0.75em;
+    margin: 2px;
+} 
+
+
+@keyframes giragira {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* Stylo temporario */
